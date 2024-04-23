@@ -366,7 +366,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 126513424}
-  - component: {fileID: 126513426}
   - component: {fileID: 126513423}
   - component: {fileID: 126513422}
   - component: {fileID: 126513421}
@@ -482,18 +481,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!210 &126513426
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126513420}
-  m_Enabled: 1
-  m_SortingLayerID: -1187620343
-  m_SortingLayer: 7
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
 --- !u!1 &178574727
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,7 +674,6 @@ GameObject:
   - component: {fileID: 254706636}
   - component: {fileID: 254706635}
   - component: {fileID: 254706634}
-  - component: {fileID: 254706637}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -772,18 +758,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254706632}
   m_CullTransparentMesh: 1
---- !u!210 &254706637
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254706632}
-  m_Enabled: 1
-  m_SortingLayerID: -1187620343
-  m_SortingLayer: 7
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
 --- !u!1 &284081347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,7 +1941,6 @@ GameObject:
   - component: {fileID: 577052049}
   - component: {fileID: 577052051}
   - component: {fileID: 577052050}
-  - component: {fileID: 577052052}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2091,18 +2064,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577052048}
   m_CullTransparentMesh: 1
---- !u!210 &577052052
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577052048}
-  m_Enabled: 1
-  m_SortingLayerID: -1187620343
-  m_SortingLayer: 7
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
 --- !u!1 &581316656
 GameObject:
   m_ObjectHideFlags: 0
