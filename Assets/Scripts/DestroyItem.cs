@@ -36,9 +36,13 @@ public class DestroyItem : MonoBehaviour
         // Destroy the GameObject when it's clicked
         Destroy(gameObject);
 
+
         // Check if all items are clicked, then switch to the new scene
         if (itemsClicked >= 10)
         {
+            // Save the score
+            PlayerPrefs.SetInt("Score", addPointsScript.score);
+
             SceneManager.LoadScene("Game Done"); // Change "YourNewSceneName" to the name of your new scene
         }
     }
