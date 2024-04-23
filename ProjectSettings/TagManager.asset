@@ -62,3 +62,6 @@ TagManager:
   - name: Items Front
     uniqueID: 3107346953
     locked: 0
+  - name: Text
+    uniqueID: 1000801761
+    locked: 0
