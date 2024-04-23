@@ -278,10 +278,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 577052050}
   lines:
-  - Hey, you. You're finally awake.
-  - You were trying to cross the border, right? Walked right into that Imperial ambush,
-    same as us, and that thief over there.
-  textSpeed: 0.05
+  - 'Ralof: Hey, you. You''re finally awake.'
+  - 'Ralof: You were trying to cross the border, right? Walked right into that Imperial
+    ambush, same as us, and that thief over there.'
+  - 'Lokir: Damn you Stormcloaks. Skyrim was fine until you came along. Empire was
+    nice and lazy. If they hadn''t been looking for you, I could''ve stolen that
+    horse and been half way to Hammerfell. You there. You and me -- we should be
+    here. It''s these Stormcloaks the Empire wants.'
+  - 'Ralof: We''re all brothers and sisters in binds now, thief. '
+  - 'Imperial Soldier: Shut up back there!'
+  textSpeed: 1e-16
 --- !u!114 &254706635
 MonoBehaviour:
   m_ObjectHideFlags: 0
