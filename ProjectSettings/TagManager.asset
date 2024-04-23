@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
+  - White Bar
+  - Items
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: White Bar
+    uniqueID: 572220923
+    locked: 0
+  - name: Items
+    uniqueID: 586056747
     locked: 0
