@@ -10,10 +10,12 @@ public class ClickToShake : MonoBehaviour
 
     private Vector3 originalPos;
     private float currentShakeDuration = 0f;
+    public AddPoints addPointsScript;
 
     void Start()
     {
         originalPos = transform.position;
+        addPointsScript = GameObject.FindObjectOfType<AddPoints>();
     }
 
     void Update()
@@ -24,6 +26,11 @@ public class ClickToShake : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
                 Shake();
+                // Subtract score when clicked
+                if (addPointsScript != null)
+                {
+                    addPointsScript.SubtractScore();
+                }
             }
         }
 
