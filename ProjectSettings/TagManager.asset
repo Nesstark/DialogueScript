@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
+  - White Bar
+  - Items
   - 
   - 
   - 
@@ -40,4 +40,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3685966953
+    locked: 0
+  - name: Scroll
+    uniqueID: 572220923
+    locked: 0
+  - name: Bush back
+    uniqueID: 2825453475
+    locked: 0
+  - name: Items
+    uniqueID: 586056747
+    locked: 0
+  - name: Bush Front
+    uniqueID: 2209545523
+    locked: 0
+  - name: Bird Nest
+    uniqueID: 2104265655
+    locked: 0
+  - name: Items Front
+    uniqueID: 3107346953
     locked: 0
