@@ -153,8 +153,8 @@ Transform:
   m_GameObject: {fileID: 9367648}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.5665217, w: -0.8240469}
-  m_LocalPosition: {x: -0.5, y: -4.75, z: 0}
-  m_LocalScale: {x: 0.025715187, y: 0.025715187, z: 0.025715187}
+  m_LocalPosition: {x: -0.395, y: -4.741, z: 0}
+  m_LocalScale: {x: 0.042338062, y: 0.042338062, z: 0.042338062}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1571635885}
@@ -477,6 +477,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &77388593
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +711,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &130092312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,6 +1284,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &360913058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +1531,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &424146039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1677,6 +1681,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.1
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &431346004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1836,6 +1841,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &530790678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +2001,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &534262013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,6 +2151,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &541840597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,6 +2301,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &597154089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,6 +2451,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &706873665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,6 +2816,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &722431879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3107,6 +3118,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &834887503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,6 +3268,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &837826700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,6 +3515,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &893104965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,6 +3665,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &941169564
 GameObject:
   m_ObjectHideFlags: 0
@@ -4151,6 +4166,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &1062791007
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,6 +4855,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &1436998503
 GameObject:
   m_ObjectHideFlags: 0
@@ -5192,6 +5209,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &1537169629
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,8 +5525,8 @@ Transform:
   m_GameObject: {fileID: 1571635884}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.6101433, w: 0.79229105}
-  m_LocalPosition: {x: -369.4, y: -2.2, z: 0}
-  m_LocalScale: {x: 3.5531936, y: 3.5531936, z: 3.5531936}
+  m_LocalPosition: {x: -224.5, y: -4.5, z: 0}
+  m_LocalScale: {x: 2.167448, y: 2.167448, z: 2.167448}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9367649}
@@ -5811,6 +5829,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &1683095292
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,6 +5979,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &1735534097
 GameObject:
   m_ObjectHideFlags: 0
@@ -5990,8 +6010,8 @@ Transform:
   m_GameObject: {fileID: 1735534097}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.71, y: -4.344, z: 0}
-  m_LocalScale: {x: 0.08259589, y: 0.08259589, z: 0.08259589}
+  m_LocalPosition: {x: -8.7774, y: -4.2753, z: 0}
+  m_LocalScale: {x: 0.09551389, y: 0.09551389, z: 0.09551389}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2072920693}
@@ -7157,6 +7177,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   shakeAmount: 0.05
   decreaseFactor: 1
+  addPointsScript: {fileID: 1472117840}
 --- !u!1 &2016533670
 GameObject:
   m_ObjectHideFlags: 0
@@ -7267,8 +7288,8 @@ Transform:
   m_GameObject: {fileID: 2072920692}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.845, y: 101.544, z: 0}
-  m_LocalScale: {x: 1.2827065, y: 1.2827065, z: 1.2827065}
+  m_LocalPosition: {x: 86.6, y: 86.9, z: 0}
+  m_LocalScale: {x: 1.091696, y: 1.091696, z: 1.091696}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1735534098}
