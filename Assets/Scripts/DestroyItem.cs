@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DestroyItem : MonoBehaviour
 {
     public AddPoints addPointsScript;
+    public static int itemsClicked = 0; // Static variable to count the items clicked
 
     private void Start()
     {
@@ -29,8 +31,16 @@ public class DestroyItem : MonoBehaviour
             addPointsScript.AddScore();
         }
 
+        itemsClicked++; // Increment the count of items clicked
+
         // Destroy the GameObject when it's clicked
         Destroy(gameObject);
+
+        // Check if all items are clicked, then switch to the new scene
+        if (itemsClicked >= 10)
+        {
+            SceneManager.LoadScene("Game Done"); // Change "YourNewSceneName" to the name of your new scene
+        }
     }
 }
 
