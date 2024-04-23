@@ -8,6 +8,7 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent; //This is our textcomponent
     public string[] lines;  //String for our different text dialogues
     public float textSpeed; //This is our textspeed float
+    public Animator animator;
 
     private int index;
 
@@ -31,6 +32,7 @@ public class Dialogue : MonoBehaviour
 
     void StartDialogue() {
         index = 0;
+        animator.SetBool("isTalking", true);
         StartCoroutine(TypeLine());
     }
 
@@ -48,6 +50,7 @@ public class Dialogue : MonoBehaviour
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         } else {
+            animator.SetBool("isTalking", false);
             gameObject.SetActive(false);
         }
     }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cb8ad9778250e49cfb5c5e657be8eac6
+guid: 67d08ed82f7b243048e71e51e623ab0e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,91 +147,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Prinssesse1(1)_0
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 694
-        width: 349
-        height: 670
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4b071fcc36da47ef9f94cc7e7bb93a3
-      internalID: -1351405369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prinssesse1(1)_1
-      rect:
-        serializedVersion: 2
-        x: 1066
-        y: 694
-        width: 349
-        height: 670
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6aed5fa27e7ff47cba0a89ac87edeaf5
-      internalID: 1794159166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prinssesse1(1)_2
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 349
-        height: 670
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fda5569f1d86498586349ad854817d0
-      internalID: 1704747605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prinssesse1(1)_3
-      rect:
-        serializedVersion: 2
-        x: 1066
-        y: 0
-        width: 349
-        height: 670
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 200032705228d4843a4aedb660c9c6dd
-      internalID: -1848523050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -242,11 +158,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Prinssesse1(1)_0: -1351405369
-      Prinssesse1(1)_1: 1794159166
-      Prinssesse1(1)_2: 1704747605
-      Prinssesse1(1)_3: -1848523050
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
