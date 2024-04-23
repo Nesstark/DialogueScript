@@ -287,7 +287,7 @@ MonoBehaviour:
     here. It''s these Stormcloaks the Empire wants.'
   - 'Ralof: We''re all brothers and sisters in binds now, thief. '
   - 'Imperial Soldier: Shut up back there!'
-  textSpeed: 1e-16
+  textSpeed: 0.05
 --- !u!114 &254706635
 MonoBehaviour:
   m_ObjectHideFlags: 0
