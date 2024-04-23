@@ -26,6 +26,8 @@ public class ClickToShake : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
                 Shake();
+                AudioManager.instance.PlaySound(12);
+
                 // Subtract score when clicked
                 if (addPointsScript != null)
                 {

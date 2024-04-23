@@ -19,6 +19,8 @@ public class DestroyItem : MonoBehaviour
         foreach (Transform child in transform)
         {
             Destroy(child.gameObject);
+            AudioManager.instance.PlaySound(9);
+
         }
 
         // Call AddScore() method from AddPoints script if addPointsScript is not null
