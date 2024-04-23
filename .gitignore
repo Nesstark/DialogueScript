@@ -55,6 +55,7 @@ ExportedObj/
 #Vscode and mac files
 **/.DS_Store
 *.vscode
+*.vsconfig
 
 # Unity3D generated file on crash reports
 sysinfo.txt
