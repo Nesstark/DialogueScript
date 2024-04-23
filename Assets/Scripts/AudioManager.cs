@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//https://www.youtube.com/watch?v=QL29aTa7J5Q
+//https://www.youtube.com/watch?v=rdX7nhH6jdM&t=306s
+
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
