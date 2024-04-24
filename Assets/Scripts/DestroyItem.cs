@@ -4,46 +4,42 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class DestroyItem : MonoBehaviour
+
+
+// Derived class from InteractableItem for destroying items
+public class DestroyItem : InteractableItem
 {
-    public AddPoints addPointsScript;
     public static int itemsClicked = 0; // Static variable to count the items clicked
 
-    private void Start()
+    protected override void Start()
     {
-        // Find the AddPoints script in the scene
-        addPointsScript = GameObject.FindObjectOfType<AddPoints>();
+        base.Start();
+        // Additional Start functionality for DestroyItem
     }
 
-    private void OnMouseDown()
+    protected override void OnMouseDown()
     {
+        base.OnMouseDown();
+
         // Destroy all child GameObjects
         foreach (Transform child in transform)
         {
             Destroy(child.gameObject);
             AudioManager.instance.PlaySound(9);
-
         }
 
-        // Call AddScore() method from AddPoints script if addPointsScript is not null
         if (addPointsScript != null)
         {
             addPointsScript.AddScore();
         }
 
         itemsClicked++; // Increment the count of items clicked
-
-        // Destroy the GameObject when it's clicked
         Destroy(gameObject);
 
-
-        // Check if all items are clicked, then switch to the new scene
         if (itemsClicked >= 10)
         {
-            // Save the score
             PlayerPrefs.SetInt("Score", addPointsScript.score);
-
-            SceneManager.LoadScene("Game Done"); // Change "YourNewSceneName" to the name of your new scene
+            SceneManager.LoadScene("Game Done");
         }
     }
 }

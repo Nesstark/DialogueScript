@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickToShake : MonoBehaviour
+// Derived class from InteractableItem for clicking to shake behavior
+public class ClickToShake : InteractableItem
 {
     public float shakeDuration = 0.5f;
     public float shakeAmount = 0.1f;
@@ -10,12 +11,11 @@ public class ClickToShake : MonoBehaviour
 
     private Vector3 originalPos;
     private float currentShakeDuration = 0f;
-    public AddPoints addPointsScript;
 
-    void Start()
+    protected override void Start()
     {
         originalPos = transform.position;
-        addPointsScript = GameObject.FindObjectOfType<AddPoints>();
+        base.Start();
     }
 
     void Update()
@@ -28,7 +28,6 @@ public class ClickToShake : MonoBehaviour
                 Shake();
                 AudioManager.instance.PlaySound(12);
 
-                // Subtract score when clicked
                 if (addPointsScript != null)
                 {
                     addPointsScript.SubtractScore();
@@ -39,7 +38,6 @@ public class ClickToShake : MonoBehaviour
         if (currentShakeDuration > 0)
         {
             transform.position = originalPos + Random.insideUnitSphere * shakeAmount;
-
             currentShakeDuration -= Time.deltaTime * decreaseFactor;
         }
         else
