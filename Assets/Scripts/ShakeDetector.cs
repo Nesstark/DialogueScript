@@ -31,6 +31,7 @@ public class ShakeDetector : MonoBehaviour
             timeSinceLastShake = Time.unscaledTime;
             Debug.Log("Shake event detected at time " + Time.unscaledTime);
             Shake();
+            AudioManager.instance.PlaySound(13);
             ShowSpeechBubble();
             StartCoroutine(ShakeIntervalCoroutine());
         }

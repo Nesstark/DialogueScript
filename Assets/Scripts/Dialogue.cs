@@ -16,6 +16,7 @@ public class Dialogue : MonoBehaviour
     void Start() {
         textComponent.text = string.Empty;
         StartDialogue();
+        AudioManager.instance.PlaySound(14);
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class Dialogue : MonoBehaviour
             } else {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+             
             }
         }
     }
