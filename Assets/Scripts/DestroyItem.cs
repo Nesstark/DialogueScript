@@ -15,6 +15,8 @@ public class DestroyItem : InteractableItem
     {
         base.Start();
         // Additional Start functionality for DestroyItem
+
+        itemsClicked = 0; // Sets the items clicked to 0 when starting the game (necessary in order to replay the game)
     }
 
     protected override void OnMouseDown()
