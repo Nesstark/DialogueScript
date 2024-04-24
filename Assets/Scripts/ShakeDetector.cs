@@ -8,9 +8,14 @@ public class ShakeDetector : MonoBehaviour
     public float MinShakeInterval = 0.5f;
     public float ShakeIntensityMultiplier = 1.5f; // New variable to control shake intensity
 
+    public GameObject speechBubblePrefab; // Reference to the speech bubble prefab
+    private GameObject speechBubbleInstance; // Instance of the speech bubble
+
     private float sqrShakeDetectionThreshold;
     private float timeSinceLastShake;
     private Vector3 initialPosition;
+
+    private bool canShake = true; // New variable to control shake interval
 
     void Start()
     {
@@ -21,11 +26,13 @@ public class ShakeDetector : MonoBehaviour
     void Update()
     {
         Vector3 acceleration = Input.acceleration;
-        if (Input.acceleration.sqrMagnitude >= sqrShakeDetectionThreshold && Time.unscaledTime >= timeSinceLastShake + MinShakeInterval)
+        if (canShake && (Input.acceleration.sqrMagnitude >= sqrShakeDetectionThreshold || Input.GetKeyDown(KeyCode.W)) && Time.unscaledTime >= timeSinceLastShake + MinShakeInterval)
         {
             timeSinceLastShake = Time.unscaledTime;
             Debug.Log("Shake event detected at time " + Time.unscaledTime);
             Shake();
+            ShowSpeechBubble();
+            StartCoroutine(ShakeIntervalCoroutine());
         }
     }
 
@@ -52,4 +59,37 @@ public class ShakeDetector : MonoBehaviour
 
         transform.position = initialPosition;
     }
+
+    void ShowSpeechBubble()
+    {
+        if (speechBubblePrefab != null)
+        {
+            if (speechBubbleInstance != null)
+            {
+                Destroy(speechBubbleInstance);
+            }
+
+            Vector3 spawnPosition = transform.position + new Vector3(-0.7f, 0.7f, 0f); // Adjust the spawn position
+            speechBubbleInstance = Instantiate(speechBubblePrefab, spawnPosition, Quaternion.identity);
+            StartCoroutine(HideSpeechBubble());
+        }
+    }
+
+    IEnumerator HideSpeechBubble()
+    {
+        yield return new WaitForSeconds(1.7f);
+
+        if (speechBubbleInstance != null)
+        {
+            Destroy(speechBubbleInstance);
+        }
+    }
+
+    IEnumerator ShakeIntervalCoroutine()
+    {
+        canShake = false;
+        yield return new WaitForSeconds(2f);
+        canShake = true;
+    }
 }
+
