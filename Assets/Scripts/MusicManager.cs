@@ -5,6 +5,7 @@ public class MusicManager : MonoBehaviour
 {
     private static MusicManager instance;
     private AudioSource audioSource;
+    private Dialogue dialogue; 
 
     private void Awake()
     {
@@ -20,6 +21,8 @@ public class MusicManager : MonoBehaviour
 
         // Get the AudioSource component
         audioSource = GetComponent<AudioSource>();
+        // Get the Dialogue component
+        dialogue = FindObjectOfType<Dialogue>();
     }
 
     private void Start()
@@ -51,19 +54,23 @@ public class MusicManager : MonoBehaviour
         // Get the current scene index
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        // Check if the current scene is scene 2
-        if (currentSceneIndex == 2)
+        // Check if the current scene is scene 1 or if dialogue is active
+        if (currentSceneIndex == 1 || (dialogue != null && dialogue.isActiveAndEnabled))
         {
-            // Stop music playback if in scene 2
-            audioSource.Stop();
+            // Lower the volume of the music if in scene 1 or dialogue is active
+            audioSource.volume = 0.2f; // Adjust the volume level as needed
         }
         else
         {
-            // Play music if not in scene 2
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
+            // Reset the volume if neither in scene 1 nor dialogue is active
+            audioSource.volume = 0.4f;
+        }
+
+        // Check if the music is not already playing
+        if (!audioSource.isPlaying)
+        {
+            // Play music if not in scene 1 and dialogue is not active
+            audioSource.Play();
         }
     }
 }
