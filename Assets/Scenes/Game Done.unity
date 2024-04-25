@@ -281,8 +281,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -979.7229, y: 568}
-  m_SizeDelta: {x: 1055.4303, y: 173.6526}
+  m_AnchoredPosition: {x: -822, y: 568}
+  m_SizeDelta: {x: 1315.9081, y: 173.6526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539694988
 MonoBehaviour:
@@ -603,7 +603,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1087.6665, y: 198.2868}
+  m_SizeDelta: {x: 1372.0405, y: 312.0365}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871271163
 MonoBehaviour:
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'BACK TO MENU
+  m_text: 'TILBAGE TIL START
 
 '
   m_isRightToLeft: 0
