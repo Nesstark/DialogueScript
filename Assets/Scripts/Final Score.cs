@@ -11,7 +11,7 @@ public class FinalScore : MonoBehaviour
     {
         // Get the score from PlayerPrefs and display it
         int score = PlayerPrefs.GetInt("Score", 0);
-        scoreText.text = "Your Final Score: " + score.ToString();
+        scoreText.text = "Din endelige Score: " + score.ToString();
 
     }
 }
