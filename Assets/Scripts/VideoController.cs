@@ -14,9 +14,8 @@ public class VideoController : MonoBehaviour
     {
         videoPlayer = gameObject.AddComponent<VideoPlayer>();
         renderTexture = new RenderTexture((int)rawImage.rectTransform.rect.width, (int)rawImage.rectTransform.rect.height, 0);
-        
+
         videoPlayer.playOnAwake = false;
-        videoPlayer.isLooping = true;
         videoPlayer.clip = videoClip;
         videoPlayer.renderMode = VideoRenderMode.RenderTexture;
         videoPlayer.targetTexture = renderTexture;
