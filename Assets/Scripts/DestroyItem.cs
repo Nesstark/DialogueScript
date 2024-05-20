@@ -46,5 +46,5 @@ public class DestroyItem : InteractableItem
     }
 }
 
-
+//This script is written with some help of ChatGPT. 
 

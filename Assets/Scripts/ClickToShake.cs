@@ -23,12 +23,12 @@ public class ClickToShake : InteractableItem
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null && hit.collider.gameObject == gameObject)
+            if (hit.collider != null && hit.collider.gameObject == gameObject) //If the 'wrong' item is clicked
             {
-                Shake();
-                AudioManager.instance.PlaySound(12);
+                Shake(); //Makes the item shake
+                AudioManager.instance.PlaySound(12); //Plays the chosen sound
 
-                if (addPointsScript != null)
+                if (addPointsScript != null) //Subtracts points from the score
                 {
                     addPointsScript.SubtractScore();
                 }
@@ -47,8 +47,10 @@ public class ClickToShake : InteractableItem
         }
     }
 
-    public void Shake()
+    public void Shake() //Makes the item shake
     {
         currentShakeDuration = shakeDuration;
     }
 }
+
+//This script is written with some help of ChatGPT. 
